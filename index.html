@@ -1,7 +1,90 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Interactive Loader : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Interactive Loader</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/mns087">View on GitHub</a>
+
+          <h1 id="project_title">Interactive Loader</h1>
+          <h2 id="project_tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a name="interactive-loader---jquery-plugin" class="anchor" href="#interactive-loader---jquery-plugin"><span class="octicon octicon-link"></span></a>Interactive Loader - Jquery Plugin</h2>
+
+<p>Jquery Plugin to show loading modal with loading image and interactive messages to keep the user busy on the loading screen. </p>
+
+<hr><p>Author: Monis Raza(<a href="mailto:mns087@gmail.com">mns087@gmail.com</a>),</p>
+
+<hr><p>Version: 1.0</p>
+
+<hr><p>Note: For simplicity and plug-n-play, css/images/lang are pre-included in this file. These can be overridden ofcourse.</p>
+
+<h3>
+<a name="how-to" class="anchor" href="#how-to"><span class="octicon octicon-link"></span></a>How to:</h3>
+
+<ul>
+<li>Show loader with full body mask - </li>
+</ul><pre><code>$.intLoader();
+</code></pre>
+
+<hr><ul>
+<li>Show loader with specific element mask - </li>
+</ul><pre><code>$.intLoader({appendTo: '#id'});
+</code></pre>
+
+<hr><ul>
+<li>Hide loader -</li>
+</ul><pre><code>$.intLoader.hide();
+</code></pre>
+
+<hr><ul>
+<li>Options Explained- </li>
+</ul><pre><code>$.intLoader({
+    appendTo: '#id', // id/class/tag of the element where to put loader. Loader will adjust itself centrally on the element. Default is 'body' tag
+    duration: 5, // Duration to change the messages. Default is 5 seconds.
+    content: [], // Array of custom messages to be displayed. No max limit. For modularity, define custom messages in your lang file and provide it here as array variable.
+    loop : true/false, // true - loop through the messages, false - stop at last message
+    defaultStyle : true/false, // True will apply default styling-css on loader and mask(Refer #5 below). False to provide them manually through css, by defining 'intloader' and 'intloader-mask' class. 
+    width: 200, // Width of the loader block. Default is 200. Height adjusts according to the content
+    zIndex : 100000, // z-index of loader block. Default is 100000.
+    fixedTop: 100, // To fix the top position of loader
+    image: '' // Path of custom loading image. 
+});
+</code></pre>
+
+<hr><ul>
+<li>To set custom styling-css(text-align, font, background-color, border, box-shadow, padding, word-wrap) of the loader, set defaultStyle = false in options attribute and define css class named 'intloader' and 'intloader-mask' with custom css. Although not needed in most cases, positioning-css(width, z-index) can also be overridden by defining them in options attribute.</li>
+</ul><hr><p>Please report any feedback/bugs at <a href="mailto:mns087@gmail.com">mns087@gmail.com</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
 </html>
